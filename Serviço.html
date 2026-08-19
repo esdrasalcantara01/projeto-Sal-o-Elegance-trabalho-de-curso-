@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <div id="cabeçalho-geral"></div>
+
+    <script>
+       fetch('/header.html')
+       .then(response => response.text())
+       .then(data => {
+              document.getElementById('cabeçalho-geral').innerHTML = data;
+       });
+    </script>
+</head>
+<body>
+
+        <div class="tipos-de-serviço" id="step-1">
+         <a href="Salão_elegance.html" class="botao-voltar"> <span class="seta">&larr;</span> Voltar</a>
+
+            <h2>Selecione um Serviço</h2>
+          <div class="serviços">
+              
+              <div class="serviço 1">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXRcAyqEbE3Az13AJUopwDBzdSIsixqztsKL1F6pOoqA&s=10">
+                     <h3>Corte de Cabelo</h3>
+                          <p class="price">25,00 R$ por 45 min</p>
+              </div>
+              
+              <div class="serviço 2">
+                     <img src="https://i.pinimg.com/736x/45/c1/5b/45c15bc3a75eaf275cdabe36ddb4cd74.jpg">
+                     <h3>Coloração</h3>
+                     <p class="price">45,00 R$ por 120 min</p>
+              </div>
+              
+              <div class="serviço 3">
+                     <img src="https://thumbs.dreamstime.com/b/nail-salon-beaufeiticeira-de-beleza-sal%C3%A3o-unhas-pecu%C3%A1ria-manicure-p%C3%A9s-m%C3%A3os-femininas-polon%C3%AAs-colorido-159541783.jpg">
+                     <h3>Manicure & Pedicure</h3>
+                     <p class="price">30,00 R$ por 60 min</p>
+              </div>
+              
+              <div class="serviço 4">
+                     <img src="https://img.magnific.com/fotos-gratis/mulher-arrumando-o-cabelo-no-salao-de-beleza_23-2149167405.jpg?semt=ais_test_b&w=740&q=80">
+                     <h3>Escova & Penteado</h3>
+                     <p class="price">20,00 R$ por 40 min</p>
+              </div>
+        
+           </div>
+        </div>
+</body>
+</html>

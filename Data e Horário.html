@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data e Horário</title>
+    <div id="cabeçalho-geral"></div>
+    
+    <script>
+     fetch('/header.html')
+     .then(response => response.text())
+     .then(data => {
+          document.getElementById('cabeçalho-geral').innerHTML = data;
+     });
+    </script>
+</head>
+<body>
+
+    <div class="data-e-hora">
+        <a href="Salão_elegance.html" class="botao-voltar"> <span class="seta">&larr;</span> Voltar</a>
+            <h2>(Data e Hora) Selecione a Data e Horário</h2>
+                <div class="date-picker-box">
+                    <label for="appointment-date">Data:</label>
+                    <input type="date" id="appointment-date">
+                </div>
+                <div class="marcar-horário">
+                    <h3>Horários Disponíveis:</h3>
+                    <div class="horários">
+                        <button>09:00</button>
+                        <button>10:00</button>
+                        <button>11:00</button>
+                        <button>14:00</button>
+                        <button>15:00</button>
+                        <button>16:00</button>
+                        <button>17:00</button>
+                    </div>
+                </div>
+        </div>
+    
+</body>
+</html>

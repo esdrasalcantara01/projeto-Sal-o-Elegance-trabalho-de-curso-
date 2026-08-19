@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissional</title>
+    <div id="cabeçalho-geral"></div>
+
+    <script>
+       fetch('/header.html')
+       .then(response => response.text())
+       .then(data => {
+              document.getElementById('cabeçalho-geral').innerHTML = data;
+       });
+    </script>
+</head>
+<body>
+    <div class="tipos-de-profissionais" id="step-2">
+        <a href="Salão_elegance.html" class="botao-voltar"> <span class="seta">&larr;</span> Voltar</a>
+            <h2>Escolha o Profissional</h2>
+
+            <div class="profissionais">
+
+                <div class="profissional 1">
+                <img src="https://i.pinimg.com/originals/1b/3f/e8/1b3fe84f825b03d843dc299a144b8827.jpg">
+                <h3>Ana Silva</h3>
+                <p class="specialty">Especialista em Cortes</p>
+                </div>
+
+                
+                <div class="profissional 2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK7W_niosemACHbSeP6Ia7X2XDVG33YSII3bf4HwNeNniSZl6J2cq39M8&s=10">
+                <h3>Carlos Souza</h3>
+                <p class="specialty">Colorista Expert</p>
+                </div>
+
+
+                <div class="profissional 3">
+                <img src="https://i.pinimg.com/originals/c0/e3/77/c0e37713f91d48b04fed438b25e72054.jpg">
+                <h3>Maria Santos</h3>
+                <p class="specialty">Estética & Unhas</p>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+body {
+    margin: 1px;
+}
+
+
+.Agendamento { 
+    min-height: 600px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/id/1497806504/pt/foto/hair-styling-in-beauty-salon-woman-does-her-hair-in-modern-beauty-salon-woman-stylist-dries.jpg?s=612x612&w=0&k=20&c=6aUJrpaN4j_LU20Eh9QC3Je9Z4iwUK6aFIozZX8G8rI=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+
+.Agendamento_menu img {
+    width: 180px;
+    height: 10%;
+}
+
+.Agendamento_menu {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: auto;
+    height: 20%;
+}
+
+
+.Agendamento_menu ul, li {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    margin-top: 15px;
+
+}
+
+
+.texto_cartaz {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 25px;
+    background: linear-gradient(
+        to right,
+         rgba(245, 245, 245, 1) 70%,
+         rgba(245, 245, 245, 0) 100% 
+    );
+    width: 30%;
+}
+
+
+.texto_cartaz h1 {
+    padding: 5px;
+    font-size: 45px;
+}
+
+
+.palavra-destaque {
+    color: #e7a1b5;
+}
+
+
+.texto_cartaz2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+    width: 30%;
+}
+
+
+.botão-agendar {
+ margin: 20px;
+ padding: 10px;
+ text-align: center;
+ background-color: #e7a1b5;
+ width: 10%;
+ border-radius: 15px;
+ color: whitesmoke;
+}
+
+
+.botão-agendar2 {
+ margin: 20px;
+ padding: 10px;
+ text-align: center;
+ background-color: #6495ED;
+ width: 20%;
+ border-radius: 15px;
+ color: whitesmoke;
+}
+
+
+.botão-agendar2:hover{
+ color: white;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #e7a1b5;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.tipos-de-serviço {
+    border: 1px solid #9686d9;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    margin: 5px;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: auto;
+    min-height: 50vh;
+}
+
+
+.serviços {
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    padding: 15px;
+} 
+
+
+.serviços .serviço {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #e0b14d;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
+    width: 40%;
+    height: 100%;
+}
+
+
+.serviço img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #e7a1b5;
+}
+
+
+.botao-voltar {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  background-color: #e7a1b5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: sans-serif;
+  align-items: center;
+  width: 8%;
+}
+
+
+.botao-voltar:hover {
+  color: whitesmoke;
+}
+
+
+.botao-voltar .seta {
+  display: inline-block; 
+  transform: scale(1.8);
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-right: 3px;
+}
+
+
+.tipos-de-profissionais {
+    border: 1px solid #9686d9;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 5px;
+    height: auto;
+    min-height: 50vh;
+}
+
+
+.profissionais {
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5px;
+    padding: 15px;
+} 
+
+
+.profissionais .profissional {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #e0b14d;
+    padding: 5px;
+    width: 20%;
+    height: 100%;
+}
+
+
+.profissional img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #e7a1b5;
+}
+
+
+.data-e-hora {
+    border: 1px solid #9686d9;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 5px;
+    height: auto;
+    min-height: 50vh;
+}
+
+
+.marcar-horário {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 2px solid #e0b14d;
+    height: 150px;
+}
+
+.horários {
+    transform: scale(1.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+}
+
+.horários button {
+    margin: 2px;
+    padding: 5px;
+}
+
